@@ -13,4 +13,11 @@ export class AppComponent {
   onChangeInput(text: string) {
     this.inputText = text;
   }
+
+  compare(letterRandom: string, letterEnter: string): string {
+    if (!letterEnter) {
+      return 'pending';
+    }
+    return letterEnter === letterRandom ? 'correct' : 'incorrect';
+  }
 }
