@@ -4,9 +4,9 @@
       <h1 class="title has-test-centered">
         Typing Challenge
       </h1>
-      <p class="has-text-centered">Random Text</p>
+      <p class="has-text-centered">{{ randomText }}</p>
       <div class="filed">
-        <input type="text" class=" input">
+        <input type="text" class=" input" (input)="onChangeInput($any($event.target).value)">
       </div>
       <div class="box has-text-centered">
         <h1 class="title">Success!</h1>
