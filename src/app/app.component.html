@@ -8,7 +8,7 @@
       <div class="filed">
         <input type="text" class=" input" (input)="onChangeInput($any($event.target).value)">
       </div>
-      <div class="box has-text-centered">
+      <div class="box has-text-centered" *ngIf="inputText===randomText">
         <h1 class="title">Success!</h1>
       </div>
     </div>
